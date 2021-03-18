@@ -19,9 +19,10 @@ function Header() {
             <li>기술정보</li>
             <li>Community</li>
           </ul>
+
+          {/* <div className="section">f</div> */}
         </div>
       </div>
-      <div className="section"></div>
     </>
   )
 }
