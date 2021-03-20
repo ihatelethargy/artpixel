@@ -22,7 +22,8 @@
 /* >= 데탑뷰 */
 @media screen and (min-width: 1024px) {
   .headerWrapper {
-    // z-index: 1;
+    font-weight: 600;
+    z-index: 1000;
     height: 13vh;
     padding: 0 13rem;
     .logoImgWrapper {
