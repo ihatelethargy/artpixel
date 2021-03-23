@@ -1,0 +1,22 @@
+@media screen and (min-width: 1024px) {
+  .footerWrapper {
+    p {
+      font-size: 1.3rem;
+      opacity: 0.8;
+    }
+    width: 100%;
+    height: 15vh;
+    padding: 0 15rem;
+    background-color: #ebebeb;
+    display: flex;
+    // justify-content: space-around;
+    align-items: center;
+    .logoWrapper {
+      img {
+        width: 10rem;
+        opacity: 0.5;
+      }
+      margin-right: 3rem;
+    }
+  }
+}

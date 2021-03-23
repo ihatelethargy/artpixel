@@ -3,6 +3,7 @@
   height: 9vh;
   padding: 0 1rem;
   position: fixed;
+  z-index: 1000;
   opacity: 1;
   background-color: #fff;
   display: flex;
@@ -23,8 +24,10 @@
 @media screen and (min-width: 1024px) {
   .headerWrapper {
     font-weight: 600;
+    position: fixed;
     z-index: 1000;
     height: 13vh;
+    color: #050a1a;
     padding: 0 13rem;
     .logoImgWrapper {
       img {
@@ -43,6 +46,24 @@
       width: 55vw;
       height: 6vh;
       font-size: 1.8rem;
+      li a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+        }
+      }
+      .cool-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: black;
+        transition: width 0.3s;
+      }
+      .cool-link:hover::after {
+        width: 100%;
+        transition: width 0.3s;
+      }
     }
   }
 

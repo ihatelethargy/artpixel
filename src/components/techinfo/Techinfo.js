@@ -1,16 +1,16 @@
 import React from 'react'
-import './Business.scss'
+import './Techinfo.scss'
 
-function Business() {
+function Techinfo() {
   return (
     <>
-      <div className="businessWrapper" id="sec2">
+      <div className="businessWrapper" id="sec4">
         <div className="layer">
           <div className="buttonTitle">
-            <p>원천기술</p>
+            <p>기술정보</p>
           </div>
           <div className="goButton">
-            <p>원천기술</p>
+            <p>기술정보</p>
           </div>
         </div>
       </div>
@@ -18,4 +18,4 @@ function Business() {
   )
 }
 
-export default Business
+export default Techinfo

@@ -1,0 +1,38 @@
+@media screen and (min-width: 1024px) {
+  .productsWrapper {
+    width: 100%;
+    height: 100vh;
+    padding-top: 9vh;
+    background-color: #ecf0f1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .titleWrapper {
+    p {
+      font-size: 3.2rem;
+    }
+  }
+  .buttonWrapper {
+    &:hover {
+      cursor: pointer;
+      background-color: #000;
+      p {
+        color: #fff;
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #000;
+    border-radius: 0.8rem;
+    p {
+      color: #000;
+      font-size: 1.8rem;
+    }
+  }
+}

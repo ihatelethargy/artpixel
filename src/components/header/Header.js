@@ -12,12 +12,32 @@ function Header() {
           </div>
         </div>
         <div className="menuWrapper">
-          <ul className="menuUl">
-            <li>회사소개</li>
-            <li>사업분야</li>
-            <li>제품소개</li>
-            <li>기술정보</li>
-            <li>Community</li>
+          <ul className="menuUl container">
+            <li className="one">
+              <a className="cool-link" href="#sec1">
+                회사소개
+              </a>
+            </li>
+            <li>
+              <a href="#sec2" className="cool-link">
+                원천기술
+              </a>
+            </li>
+            <li>
+              <a className="cool-link" href="#sec3">
+                사업영역
+              </a>
+            </li>
+            <li>
+              <a className="cool-link" href="#sec4">
+                기술정보
+              </a>
+            </li>
+            <li>
+              <a className="cool-link" href="sec5">
+                Community
+              </a>
+            </li>
           </ul>
 
           {/* <div className="section">f</div> */}
