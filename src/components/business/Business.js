@@ -9,6 +9,11 @@ function Business() {
           <div className="buttonTitle">
             <p>원천기술</p>
           </div>
+          <div className="businessContent">
+            <div className="round"></div>
+            <div className="round"></div>
+            <div className="round"></div>
+          </div>
           <div className="goButton">
             <p>원천기술</p>
           </div>
