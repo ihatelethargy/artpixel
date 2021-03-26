@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Products.scss'
 
 function Products() {
@@ -11,13 +12,21 @@ function Products() {
 
         <div className="itemWrapper">
           <div className="item a">
-            <p>실내공간</p>
+            <Link to="/businessarea">
+              <p>실내공간</p>
+            </Link>
           </div>
+
           <div className="item b">
-            <p>자동차</p>
+            <Link to="/businessarea">
+              <p>자동차</p>
+            </Link>
           </div>
+
           <div className="item c">
-            <p>전자기기</p>
+            <Link to="/businessarea">
+              <p>전자기기</p>
+            </Link>
           </div>
         </div>
       </div>

@@ -43,9 +43,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a className="cool-link" href="sec5">
-                Community
-              </a>
+              <Link to="/community">Community</Link>
             </li>
           </ul>
 

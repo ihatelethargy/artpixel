@@ -20,16 +20,24 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
     .item {
       p {
         font-size: 5rem;
         font-weight: 600;
         color: #ecf0f1;
+        border: 0.4rem solid #fff;
+        padding: 0.7rem 1rem 0.1rem 1rem;
+        border-radius: 5px;
+        &:hover {
+          color: black;
+          border: 0.4rem solid black;
+        }
       }
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
+      // cursor: pointer;
       filter: grayscale(100%);
       background-size: 60rem;
       &:hover {

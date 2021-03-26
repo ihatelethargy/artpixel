@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Business.scss'
 
 function Business() {
@@ -14,9 +15,12 @@ function Business() {
             <div className="round"></div>
             <div className="round"></div>
           </div>
-          <div className="goButton">
-            <p>원천기술</p>
-          </div>
+
+          <Link to="/origintech">
+            <div className="goButton">
+              <p>원천기술</p>
+            </div>
+          </Link>
         </div>
       </div>
     </>

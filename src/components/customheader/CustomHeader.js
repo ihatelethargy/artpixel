@@ -20,21 +20,31 @@ function CustomHeader() {
         </div>
         <div className="menuWrapper">
           <ul className="menuUl container">
-            <li className="one">
-              <a className="cool-link"> 회사소개</a>
-            </li>
-            <li>
-              <a className="cool-link">원천기술</a>
-            </li>
-            <li>
-              <a className="cool-link">사업영역</a>
-            </li>
-            <li>
-              <a className="cool-link">기술정보</a>
-            </li>
-            <li>
-              <a className="cool-link">Community</a>
-            </li>
+            <Link to="/intro">
+              <li className="one">
+                <a className="cool-link"> 회사소개</a>
+              </li>
+            </Link>
+            <Link to="/origintech">
+              <li>
+                <a className="cool-link">원천기술</a>
+              </li>
+            </Link>
+            <Link to="/businessarea">
+              <li>
+                <a className="cool-link">사업영역</a>
+              </li>
+            </Link>
+            <Link to="/techinfo">
+              <li>
+                <a className="cool-link">기술정보</a>
+              </li>
+            </Link>
+            <Link to="/community">
+              <li>
+                <a className="cool-link">Community</a>
+              </li>
+            </Link>
           </ul>
 
           {/* <div className="section">f</div> */}

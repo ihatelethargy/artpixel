@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Techinfo.scss'
 
 function Techinfo() {
@@ -10,7 +11,9 @@ function Techinfo() {
             <p>기술정보</p>
           </div>
           <div className="goButton">
-            <p>기술정보</p>
+            <Link to="/techinfo">
+              <p>기술정보</p>
+            </Link>
           </div>
         </div>
       </div>
