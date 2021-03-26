@@ -1,6 +1,13 @@
 import React from 'react'
 import './Header.scss'
 import logo from '../../images/logo.png'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useHistory,
+} from 'react-router-dom'
 
 function Header() {
   return (
@@ -8,7 +15,9 @@ function Header() {
       <div className="headerWrapper">
         <div className="logoWrapper">
           <div className="logoImgWrapper">
-            <img src={logo} alt="" />
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
           </div>
         </div>
         <div className="menuWrapper">
