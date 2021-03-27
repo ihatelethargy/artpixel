@@ -6,9 +6,18 @@ import ContentsLeft from '../../components/contentsleft/ContentsLeft.js'
 import IntroImg from '../../images/introimg.jpeg'
 import './Intro.scss'
 
-function Intro({ menu, title }) {
+function Intro() {
+  const [title, setTitle] = useState('회사소개')
+  const [menu, setMenu] = useState(['인사말', '경영진', '오시는길'])
   const history = useHistory()
-  console.log(menu)
+
+  useEffect(() => {
+    console.log(history.location.pathname)
+    if (history.location.pathname === '/intro') {
+      setTitle('회사소개')
+      setMenu(['인사말', '경영진', '오시는길'])
+    }
+  }, [history.location.pathname])
 
   return (
     <>
