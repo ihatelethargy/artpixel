@@ -1,0 +1,32 @@
+@media screen and (min-width: 1024px) {
+  .leftHeaderTitle {
+    // border: 1px solid red;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+  .leftButtonWrapper {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    ul {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      li {
+        cursor: pointer;
+        border-bottom: 1px solid gray;
+        padding: 1rem 0 1rem 1rem;
+        margin-bottom: 2rem;
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}

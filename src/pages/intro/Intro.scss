@@ -1,0 +1,29 @@
+@media screen and (min-width: 1024px) {
+  .IntroWrapper {
+    padding-top: 13vh;
+    height: auto;
+    .contentsWrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      .contentsLeft {
+        width: 25%;
+        height: 100%;
+        // border: 1px solid green;
+      }
+      .contentsRight {
+        width: 75%;
+        height: 100%;
+        // border: 1px solid green;
+      }
+    }
+  }
+  .introImgWrapper {
+    height: 25vh;
+    background-image: url('../../images/introimg.jpeg');
+    // background-size: ;
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+  }
+}

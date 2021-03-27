@@ -1,5 +1,5 @@
-import React from 'react'
-import { Route, Router } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Route, Router, useHistory } from 'react-router-dom'
 import Business from '../../components/business/Business'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'

@@ -12,6 +12,7 @@ import Community from './pages/community/Community'
 import OriginTech from './pages/origintech/OriginTech'
 import BusinessArea from './pages/businessarea/BusinessArea'
 import TechInfoPage from './pages/techinfopage/TechInfoPage'
+import { useEffect, useState } from 'react'
 
 function App() {
   return (

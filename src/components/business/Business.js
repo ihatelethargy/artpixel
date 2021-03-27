@@ -11,7 +11,11 @@ function Business() {
             <p>원천기술</p>
           </div>
           <div className="businessContent">
-            <div className="round"></div>
+            <div className="rountOut2">
+              <div className="rountOut1">
+                <div className="round"></div>
+              </div>
+            </div>
             <div className="round"></div>
             <div className="round"></div>
           </div>
