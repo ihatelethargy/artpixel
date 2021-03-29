@@ -5,10 +5,12 @@ import Footer from '../../components/footer/Footer'
 import ContentsLeft from '../../components/contentsleft/ContentsLeft.js'
 import IntroImg from '../../images/introimg.jpeg'
 import './Intro.scss'
+import ContentsRight from '../../components/contentsright/ContentsRight'
 
 function Intro() {
   const [title, setTitle] = useState('회사소개')
   const [menu, setMenu] = useState(['인사말', '경영진', '오시는길'])
+  const [menuToggle, setMenuToggle] = useState(0)
   const history = useHistory()
 
   useEffect(() => {
@@ -23,16 +25,16 @@ function Intro() {
     <>
       <Route component={CustomHeader} />
       <div className="IntroWrapper">
-        <div className="introImgWrapper">
-          {/* <img src={IntroImg} alt="" /> */}
-        </div>
+        <div className="introImgWrapper"></div>
 
         <div className="contentsWrapper">
           <div className="contentsLeft">
-            <ContentsLeft title={title} menu={menu} />
+            <ContentsLeft title={title} menu={menu} toggle={menuToggle} />
             {/* menu={menu} */}
           </div>
-          <div className="contentsRight"></div>
+          <div className="contentsRight">
+            <ContentsRight toggle={menuToggle} />
+          </div>
         </div>
       </div>
       <Route component={Footer} />

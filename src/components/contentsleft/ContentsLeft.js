@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styled, { css } from 'styled-components'
 import './ContentsLeft.scss'
 
 function ContentsLeft({ title, menu }) {
-  console.log(menu)
-  const menuList = menu.map(item => <li>{item}</li>)
+  const [menuToggle, setMenuToggle] = useState(0)
+  const menuList = menu.map((item, index) => (
+    <li onClick={() => setMenuToggle(index)}>{item}</li>
+  ))
 
   return (
     <>
@@ -12,11 +15,46 @@ function ContentsLeft({ title, menu }) {
           <p>{title}</p>
         </div>
         <div className="leftButtonWrapper">
-          <ul>{menuList}</ul>
+          <ToggleUl toggle={menuToggle} className="toggleUl">
+            {menuList}
+          </ToggleUl>
         </div>
       </div>
     </>
   )
 }
+
+const ToggleUl = styled.ul`
+  ${props =>
+    props.toggle === 0 &&
+    css`
+      @media screen and (min-width: 1024px) {
+        li:nth-child(${props.toggle + 1}) {
+          background-color: #184e87;
+          color: #fff;
+        }
+      }
+    `}
+  ${props =>
+    props.toggle === 1 &&
+    css`
+      @media screen and (min-width: 1024px) {
+        li:nth-child(${props.toggle + 1}) {
+          background-color: #184e87;
+          color: #fff;
+        }
+      }
+    `}
+    ${props =>
+    props.toggle === 2 &&
+    css`
+      @media screen and (min-width: 1024px) {
+        li:nth-child(${props.toggle + 1}) {
+          background-color: #184e87;
+          color: #fff;
+        }
+      }
+    `}
+`
 
 export default ContentsLeft

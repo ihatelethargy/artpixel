@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    ul {
+    .toggleUl {
       width: 45%;
       display: flex;
       flex-direction: column;
@@ -22,7 +22,7 @@
         cursor: pointer;
         border-bottom: 1px solid gray;
         padding: 1rem 0 1rem 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         &:hover {
           color: gray;
         }
