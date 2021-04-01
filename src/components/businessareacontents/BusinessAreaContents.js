@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
-import RightIntro from '../rightcontents/RightIntro'
-import './ContentsLeft.scss'
+import './OriginTechContents.scss'
 
-function ContentsLeft({ title, menu, compo }) {
-  console.log(compo)
+function BusinessAreaContents({ title, menu }) {
   const [menuToggle, setMenuToggle] = useState(0)
   const menuList = menu.map((item, index) => (
     <li onClick={() => setMenuToggle(index)}>{item}</li>
@@ -24,8 +22,8 @@ function ContentsLeft({ title, menu, compo }) {
           </div>
         </div>
         <ToggleRight>
-          {menuToggle === 0 && <RightIntro />}
-          {menuToggle === 1 && <div>오시는길</div>}
+          {menuToggle === 0 && <div>기술소개</div>}
+          {menuToggle === 1 && <div>원천기술</div>}
         </ToggleRight>
       </div>
     </>
@@ -34,7 +32,7 @@ function ContentsLeft({ title, menu, compo }) {
 
 const ToggleRight = styled.div`
   width: 75%;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 `
 
 const ToggleUl = styled.ul`
@@ -60,4 +58,4 @@ const ToggleUl = styled.ul`
     `}
 `
 
-export default ContentsLeft
+export default BusinessAreaContents

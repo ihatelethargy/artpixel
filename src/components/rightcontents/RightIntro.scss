@@ -1,0 +1,36 @@
+@media screen and (min-width: 1024px) {
+  .rightIntroWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30rem;
+    .rightIntroTitle {
+      // border: 1px solid red;
+      margin-top: 10rem;
+      p {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+
+        // text-align: ;
+      }
+    }
+    .rigithIntroContent {
+      p {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: justify;
+        // font-family: 'Noto Serif KR', serif;
+      }
+    }
+    .rightIntroSign {
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+      font-size: 3rem;
+
+      display: flex;
+      justify-content: flex-end;
+      font-family: 'Noto Serif KR', serif;
+    }
+  }
+}
