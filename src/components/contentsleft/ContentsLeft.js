@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import RightIntro from '../rightcontents/RightIntro'
+import RightMap from '../rightmap/RightMap'
 import './ContentsLeft.scss'
 
 function ContentsLeft({ title, menu, compo }) {
@@ -25,7 +26,7 @@ function ContentsLeft({ title, menu, compo }) {
         </div>
         <ToggleRight>
           {menuToggle === 0 && <RightIntro />}
-          {menuToggle === 1 && <div>오시는길</div>}
+          {menuToggle === 1 && <RightMap />}
         </ToggleRight>
       </div>
     </>
