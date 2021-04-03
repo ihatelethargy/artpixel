@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Techinfo.scss'
+import { SwapRightOutlined } from '@ant-design/icons'
 
 function Techinfo() {
   return (
@@ -12,7 +13,9 @@ function Techinfo() {
           </div>
           <div className="goButton">
             <Link to="/techinfo">
-              <p>기술정보</p>
+              <p>
+                기술정보 <SwapRightOutlined />
+              </p>
             </Link>
           </div>
         </div>

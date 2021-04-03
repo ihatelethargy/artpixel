@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Business.scss'
+import { SwapRightOutlined } from '@ant-design/icons'
 
 function Business() {
   return (
@@ -24,7 +25,9 @@ function Business() {
 
           <Link to="/origintech">
             <div className="goButton">
-              <p>원천기술</p>
+              <p>
+                원천기술 <SwapRightOutlined />
+              </p>
             </div>
           </Link>
         </div>

@@ -27,7 +27,7 @@
         font-weight: 600;
         color: #ecf0f1;
         border: 0.4rem solid #fff;
-        padding: 0.7rem 1rem 0.1rem 1rem;
+        padding: 0.7rem 1rem;
         border-radius: 5px;
         &:hover {
           color: black;
@@ -39,11 +39,13 @@
       align-items: center;
       // cursor: pointer;
       filter: grayscale(100%);
-      background-size: 60rem;
+      background-size: 80rem;
+      background-repeat: no-repeat;
       &:hover {
         filter: grayscale(0%);
         transition: all ease-in-out 0.4s;
         background-size: 65rem;
+        background-repeat: no-repeat;
       }
     }
     .a {
