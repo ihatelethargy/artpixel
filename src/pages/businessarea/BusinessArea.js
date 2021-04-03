@@ -8,7 +8,7 @@ import './BusinessArea.scss'
 
 function BusinessArea() {
   const [title, setTitle] = useState('사업영역')
-  const [menu, setMenu] = useState(['ABF21 제품군', '적용분야'])
+  const [menu, setMenu] = useState(['ABF21 제품군', '적용분야'])
   const history = useHistory()
 
   useEffect(() => {
