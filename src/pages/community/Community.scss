@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+  .CommunityWrapper {
+    padding-top: 13vh;
+    height: auto;
+    // height: 200vh;
+    // border: 1px solid red;
+    .contentsWrapper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      .contentsLeft {
+        width: 100%;
+        height: auto;
+        // border: 1px solid green;
+      }
+      //   .contentsRight {
+      //     width: 75%;
+      //     height: 100%;
+      //     // border: 1px solid green;
+      //   }
+    }
+  }
+  .CommunityImgWrapper {
+    height: 30vh;
+    background-image: url('../../images/introimg3.jpeg');
+    // background-size: ;
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+  }
+}
