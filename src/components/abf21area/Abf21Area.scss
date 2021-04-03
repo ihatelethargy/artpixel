@@ -1,0 +1,46 @@
+@media screen and (min-width: 1024px) {
+  .rightAbf21AreaWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30rem;
+    .rightAbf21AreaTitle {
+      // border: 1px solid red;
+      margin-top: 10rem;
+      p {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+
+        // text-align: ;
+      }
+    }
+    .rigithAbf21AreaContent {
+      .qmark {
+        display: block;
+        color: #184e87;
+        font-weight: 800;
+        margin-bottom: 3rem;
+        font-size: 2.3rem;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: justify;
+        // font-family: 'Noto Serif KR', serif;
+      }
+      .abfImgWrapper {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        img {
+          display: block;
+          width: 20rem;
+        }
+      }
+    }
+  }
+}

@@ -10,15 +10,24 @@
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 5rem;
-
-        // text-align: ;
+      }
+    }
+    .rightMapbutton {
+      margin-bottom: 3rem;
+      button {
+        border: none;
+        border-radius: 0;
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.6rem;
+        background-color: #184e87;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline-style: none;
       }
     }
   }
-}
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
 }

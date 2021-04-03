@@ -1,11 +1,14 @@
-.MainWrapper {
-}
-
 @media screen and (min-width: 1024px) {
   .MainWrapper {
+    width: 100%;
+    display: block;
     height: auto;
     background-image: url(backgroundImg.jpg);
     background-attachment: fixed;
     background-size: cover;
   }
+}
+
+.MainWrapper {
+  // width: 50%;
 }

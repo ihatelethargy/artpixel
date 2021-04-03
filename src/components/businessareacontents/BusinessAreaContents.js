@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
-import './OriginTechContents.scss'
+import Abf21Area from '../abf21area/Abf21Area'
+import ApplyArea from '../applyarea/ApplyArea'
+import './BusinessAreaContents.scss'
 
 function BusinessAreaContents({ title, menu }) {
   const [menuToggle, setMenuToggle] = useState(0)
@@ -22,8 +24,8 @@ function BusinessAreaContents({ title, menu }) {
           </div>
         </div>
         <ToggleRight>
-          {menuToggle === 0 && <div>기술소개</div>}
-          {menuToggle === 1 && <div>원천기술</div>}
+          {menuToggle === 0 && <Abf21Area />}
+          {menuToggle === 1 && <ApplyArea />}
         </ToggleRight>
       </div>
     </>
@@ -32,7 +34,6 @@ function BusinessAreaContents({ title, menu }) {
 
 const ToggleRight = styled.div`
   width: 75%;
-  border: 1px solid blue;
 `
 
 const ToggleUl = styled.ul`

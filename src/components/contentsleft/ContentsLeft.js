@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 import RightIntro from '../rightcontents/RightIntro'
 import RightMap from '../rightmap/RightMap'
@@ -8,7 +8,7 @@ function ContentsLeft({ title, menu, compo }) {
   console.log(compo)
   const [menuToggle, setMenuToggle] = useState(0)
   const menuList = menu.map((item, index) => (
-    <li onClick={() => setMenuToggle(index)}>{item}</li>
+    <li onClick={() => setMenuToggle(index)}>{item} </li>
   ))
 
   return (

@@ -3,3 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
+.mainWrapper {
+  display: none;
+  // 모바일작업
+}
+
+@media screen and (min-width: 1024px) {
+  .mainWrapper {
+    display: block;
+  }
+}

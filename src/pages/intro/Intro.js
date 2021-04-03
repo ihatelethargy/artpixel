@@ -9,7 +9,7 @@ import './Intro.scss'
 function Intro() {
   const [title, setTitle] = useState('회사소개')
   const [menu, setMenu] = useState(['인사말', '오시는길'])
-  const [menuToggle, setMenuToggle] = useState(0)
+  const [menuToggle, setMenuToggle] = useState()
   const history = useHistory()
 
   useEffect(() => {
