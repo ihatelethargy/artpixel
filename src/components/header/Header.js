@@ -43,7 +43,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <Link to="/community">Community</Link>
+              <Link to="/community">CotactUs</Link>
             </li>
           </ul>
 

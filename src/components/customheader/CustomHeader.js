@@ -42,7 +42,7 @@ function CustomHeader() {
             </Link>
             <Link to="/community">
               <li>
-                <a className="cool-link">Community</a>
+                <a className="cool-link">ContactUs</a>
               </li>
             </Link>
           </ul>
