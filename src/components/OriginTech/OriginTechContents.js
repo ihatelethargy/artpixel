@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
+import AntiInter from '../antiinter/AntiInter'
+import Summary from '../summary/Summary'
+import Zeolite from '../zeolite/Zeolite'
 import './OriginTechContents.scss'
 
 function OriginTechContents({ title, menu, compo }) {
-  console.log(compo)
   const [menuToggle, setMenuToggle] = useState(0)
   const menuList = menu.map((item, index) => (
     <li onClick={() => setMenuToggle(index)}>{item}</li>
@@ -23,8 +25,9 @@ function OriginTechContents({ title, menu, compo }) {
           </div>
         </div>
         <ToggleRight>
-          {menuToggle === 0 && <div>기술소개</div>}
-          {menuToggle === 1 && <div>원천기술</div>}
+          {menuToggle === 0 && <Summary />}
+          {menuToggle === 1 && <Zeolite />}
+          {menuToggle === 2 && <AntiInter />}
         </ToggleRight>
       </div>
     </>
@@ -33,7 +36,6 @@ function OriginTechContents({ title, menu, compo }) {
 
 const ToggleRight = styled.div`
   width: 75%;
-  border: 1px solid blue;
 `
 
 const ToggleUl = styled.ul`
@@ -49,6 +51,17 @@ const ToggleUl = styled.ul`
     `}
   ${props =>
     props.toggle === 1 &&
+    css`
+      @media screen and (min-width: 1024px) {
+        li:nth-child(${props.toggle + 1}) {
+          background-color: #184e87;
+          color: #fff;
+        }
+      }
+    `}
+
+    ${props =>
+    props.toggle === 2 &&
     css`
       @media screen and (min-width: 1024px) {
         li:nth-child(${props.toggle + 1}) {

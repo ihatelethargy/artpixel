@@ -1,0 +1,77 @@
+@media screen and (min-width: 1024px) {
+  .ZeoliteWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30rem;
+    .ZeoliteTitle {
+      // border: 1px solid red;
+      margin-top: 10rem;
+      p {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+
+        // text-align: ;
+      }
+    }
+
+    .ZeoliteContent {
+      .qmark {
+        display: block;
+        color: #184e87;
+        font-weight: 800;
+        margin-bottom: 3rem;
+        font-size: 2.3rem;
+      }
+      .zeoTitle {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+        p {
+          font-size: 1.8rem;
+          font-weight: 800;
+        }
+      }
+      .zeoContent {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+        p {
+          font-size: 1.8rem;
+          font-weight: 800;
+        }
+      }
+      .contentZeo {
+        display: block;
+        margin-bottom: 0.1rem;
+        // border: 1px solid red;
+      }
+      .boxImgWrapper {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 20rem;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: justify;
+        // font-family: 'Noto Serif KR', serif;
+      }
+      .antiImgWrapper {
+        // border: 1px solid red;
+        width: 100%;
+        img {
+          display: block;
+          width: 50rem;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+  .end {
+    margin-bottom: 5rem;
+  }
+}

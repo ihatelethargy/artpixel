@@ -11,13 +11,15 @@ function Business() {
             <p>원천기술</p>
           </div>
           <div className="businessContent">
-            <div className="rountOut2">
-              <div className="rountOut1">
-                <div className="round"></div>
-              </div>
+            <div className="round">
+              <p>바이러스 항균</p>
             </div>
-            <div className="round"></div>
-            <div className="round"></div>
+            <div className="round">
+              <p>인체 안정성</p>
+            </div>
+            <div className="round">
+              <p>세균/곰팡이 항균</p>
+            </div>
           </div>
 
           <Link to="/origintech">

@@ -7,14 +7,14 @@ import './OriginTech.scss'
 
 function OriginTech() {
   const [title, setTitle] = useState('원천기술')
-  const [menu, setMenu] = useState(['기술소개', '원천기술'])
+  const [menu, setMenu] = useState(['개요', 'Zeolite', '항균제비교'])
   const history = useHistory()
 
   useEffect(() => {
     console.log(history.location.pathname)
     if (history.location.pathname === '/origintech') {
       setTitle('원천기술')
-      setMenu(['기술소개', '원천기술'])
+      setMenu(['개요', 'Zeolite', '항균제비교'])
     }
   }, [history.location.pathname])
 
