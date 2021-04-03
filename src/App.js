@@ -14,12 +14,14 @@ import BusinessArea from './pages/businessarea/BusinessArea'
 import TechInfoPage from './pages/techinfopage/TechInfoPage'
 import { useEffect, useState } from 'react'
 import IntroContainer from './containers/IntroContainer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <div className="mainWrapper">
       {/* 이부d분은 모바일 작업할때 바꾸기 */}
       <Router>
+        <ScrollToTop />
         <Route exact path="/" component={Main} />
         <Route exact path="/intro" component={Intro} />
         <Route exact path="/origintech" component={OriginTech} />
