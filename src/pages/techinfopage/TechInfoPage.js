@@ -4,18 +4,24 @@ import BusinessAreaContents from '../../components/businessareacontents/Business
 import CustomHeader from '../../components/customheader/CustomHeader'
 import Footer from '../../components/footer/Footer'
 import OriginTechContents from '../../components/OriginTech/OriginTechContents'
+import Techinfo from '../../components/techinfo/Techinfo'
+import TechinfoContents from '../../components/techinfocontents/TechInfoContents'
 import './TechInfoPage.scss'
 
 function TechInfoPage() {
-  const [title, setTitle] = useState('사업영역')
-  const [menu, setMenu] = useState(['ABF21 제품군', '적용분야'])
+  const [title, setTitle] = useState('기술정보')
+  const [menu, setMenu] = useState([
+    '항균필름비교',
+    'SGS DATA',
+    '인체안전성 데이터',
+  ])
   const history = useHistory()
 
   useEffect(() => {
     console.log(history.location.pathname)
     if (history.location.pathname === '/origintech') {
-      setTitle('사업영역')
-      setMenu(['ABF21 제품군', '적용분야'])
+      setTitle('기술정보')
+      setMenu(['항균필름비교', 'SGS DATA', '인체안전성 데이터'])
     }
   }, [history.location.pathname])
 
@@ -27,7 +33,8 @@ function TechInfoPage() {
 
         <div className="contentsWrapper">
           <div className="contentsLeft">
-            <BusinessAreaContents title={title} menu={menu} />
+            <TechinfoContents title={title} menu={menu} />
+            {/* <BusinessAreaContents title={title} menu={menu} /> */}
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 @media screen and (min-width: 1024px) {
-  .SummaryWrapper {
+  .TechInfoOneWrapper {
     display: flex;
     flex-direction: column;
     padding-right: 30rem;
-    .SummaryTitle {
+    .TechInfoOneTitle {
       // border: 1px solid red;
       margin-top: 10rem;
       p {
@@ -14,9 +14,10 @@
         // text-align: ;
       }
     }
-    .SummaryContent {
-      .boxWrapper {
-        margin-bottom: 5rem;
+    .TechInfoOneContent {
+      margin-bottom: 5rem;
+      img {
+        width: 80rem;
       }
       .qmark {
         display: block;
