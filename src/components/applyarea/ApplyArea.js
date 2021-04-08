@@ -33,7 +33,7 @@ function ApplyArea() {
           </div>
           <div className="sectionItem">
             <div className="itemTitleWrapper">
-              <span>기존 제품 / ATF 제품</span>
+              <span>기존 제품 / ABF 제품</span>
             </div>
             <div className="itemImgWrapper">
               <img src={ATF1} alt="" />
