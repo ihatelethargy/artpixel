@@ -23,9 +23,9 @@ function Header() {
         <div className="menuWrapper">
           <ul className="menuUl container">
             <li className="one">
-              <a className="cool-link" href="#sec1">
-                회사소개
-              </a>
+              {/* <a className="cool-link" href="#sec1"> */}
+              <Link to="/intro">회사소개</Link>
+              {/* </a> */}
             </li>
             <li>
               <a href="#sec2" className="cool-link">
