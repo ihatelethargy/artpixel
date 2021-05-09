@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import ApplyArea from '../applyarea/ApplyArea'
+import TechInfoFour from '../techinfofour/techinfoFour'
 import TechInfoOne from '../techinfoone/TechInfoOne'
 import TechInfoThree from '../techinfothree/TechInfoThree'
 import TechInfoTwo from '../techinfotwo/TechInfoTwo'
@@ -29,6 +30,7 @@ function TechinfoContents({ title, menu }) {
           {menuToggle === 0 && <TechInfoOne />}
           {menuToggle === 1 && <TechInfoTwo />}
           {menuToggle === 2 && <TechInfoThree />}
+          {menuToggle === 3 && <TechInfoFour />}
         </ToggleRight>
       </div>
     </>
@@ -62,6 +64,16 @@ const ToggleUl = styled.ul`
     `}
     ${props =>
     props.toggle === 2 &&
+    css`
+      @media screen and (min-width: 1024px) {
+        li:nth-child(${props.toggle + 1}) {
+          background-color: #184e87;
+          color: #fff;
+        }
+      }
+    `}
+    ${props =>
+    props.toggle === 3 &&
     css`
       @media screen and (min-width: 1024px) {
         li:nth-child(${props.toggle + 1}) {

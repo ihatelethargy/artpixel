@@ -14,6 +14,7 @@ function TechInfoPage() {
     '항균필름비교',
     'SGS DATA',
     '인체안전성 데이터',
+    '특허출원',
   ])
   const history = useHistory()
 
@@ -21,7 +22,7 @@ function TechInfoPage() {
     console.log(history.location.pathname)
     if (history.location.pathname === '/origintech') {
       setTitle('기술정보')
-      setMenu(['항균필름비교', 'SGS DATA', '인체안전성 데이터'])
+      setMenu(['항균필름비교', 'SGS DATA', '인체안전성 데이터', '특허출원'])
     }
   }, [history.location.pathname])
 

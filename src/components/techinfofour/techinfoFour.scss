@@ -1,0 +1,38 @@
+@media screen and (min-width: 1024px) {
+  .TechInfoFourWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30rem;
+    .TechInfoFourTitle {
+      // border: 1px solid red;
+      margin-top: 10rem;
+      p {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+
+        // text-align: ;
+      }
+    }
+    .TechInfoFourContent {
+      margin-bottom: 5rem;
+      .strong {
+        font-weight: 800;
+      }
+      .qmark {
+        display: block;
+        color: #184e87;
+        font-weight: 800;
+        margin-bottom: 3rem;
+        font-size: 2.3rem;
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: justify;
+        // font-family: 'Noto Serif KR', serif;
+      }
+    }
+  }
+}
