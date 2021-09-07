@@ -1,16 +1,17 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .mainWrapper {
-  display: none;
-  // 모바일작업
+    display: none;
+    // 모바일작업
 }
 
 @media screen and (min-width: 1024px) {
-  .mainWrapper {
-    display: block;
-  }
+    .mainWrapper {
+        display: none;
+        //임시 사이트 down
+    }
 }
